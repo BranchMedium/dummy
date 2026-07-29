@@ -40,7 +40,7 @@ function slideIt() {
     mainObject.className = changeAlignment;
     
     numSl++;
-    mainObject.src = answer.toString();
+    return mainObject.src = answer.toString();
     
 }
 
