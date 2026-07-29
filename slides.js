@@ -36,11 +36,12 @@ function alignment() {
 //this create the slides 
 function slideIt() {
     numberingSlides();
+    let changeAlignment = alignment();
+    mainObject.className = changeAlignment;
     answer = myslides[numSlides];
     numSl++;
     mainObject.src = answer.toString();
-    let changeAlignment = alignment();
-    mainObject.className = changeAlignment;
+    
 }
 
 
