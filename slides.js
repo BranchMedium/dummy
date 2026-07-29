@@ -14,6 +14,7 @@ let myslides = [
 ]
 // this function gives random value to select any key
 numSl = 0;
+answer = myslides[numSlides];
 function numberingSlides() {  
     numSlides = numSl;
     
@@ -38,7 +39,7 @@ function slideIt() {
     numberingSlides();
     let changeAlignment = alignment();
     mainObject.className = changeAlignment;
-    answer = myslides[numSlides];
+    
     numSl++;
     mainObject.src = answer.toString();
     
