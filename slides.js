@@ -18,10 +18,9 @@ answer = myslides[numSlides];
 function numberingSlides() {  
     numSlides = numSl;
     
-    if(numSl == myslides.length){
-        --numSl
-    }
-    return numSlides;  
+    if (numSl == myslides.length){
+      return (numSlides-1); 
+    }  
 }
 function alignment() {
     let vertical = [
