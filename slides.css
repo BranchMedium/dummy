@@ -1,0 +1,2459 @@
+
+h1, a {
+    text-align: center;
+}
+button {
+    color: aqua;
+    background-color: yellowgreen;
+    width: 70px;
+    line-height: 10px;
+    height: 30px;
+    border-radius: 10px;
+    text-align: center;
+    outline: none;
+}
+button:hover {
+    background-color: black;
+    cursor: pointer;
+    
+}
+a {
+    display: block;
+    text-decoration: none;
+}
+div {
+    text-align: center;
+}
+.pictureGrid {
+    grid-template-rows: auto;
+}
+#pictureFlex > .picture {
+    margin: 0;
+    align-self: center;
+}
+#pictureFlex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+#pictureFlex > .picture > figcaption {
+    /* text-decoration: underline; */
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    /* color: black; */
+}
+#pictureFlex > .picture > .horizontal, #pictureFlex > .picture > .vertical {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* .pictureGrid {
+
+    display: grid;
+} */
+/* #theLink {
+    text-decoration: underline;
+} */
+/********************************************************************/
+
+/****************responsive for max width 218px(wearables)*************************************/
+/* @media only screen and (max-device-width: 218px) and (max-device-height: 281px) {
+    p {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 5px;
+    }
+   
+} */
+/**************************************/
+@media only screen and (max-device-width: 218px) and (max-device-height: 281px) and (orientation: portrait) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 10px;
+        line-height: 13px;
+        word-spacing: 2px;
+        padding: 0 5px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        height: 180px;
+        width: 300px;
+    }
+    #pictureFlex > .picture > .vertical {
+        width: 190px;
+        height: 370px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        /* align-items: start; */
+        row-gap: 30px;
+        /* height: 1500px; */
+    }
+   /* .pictureGrid {
+    grid-template-rows: auto;
+   } */
+}
+/****************************************/
+@media only screen and (max-device-width: 281px) and (max-device-height: 218px) and (orientation: landscape) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 10px;
+        line-height: 13px;
+        padding: 0 5px;
+        word-spacing: 2px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        height: 180px;
+        width: 300px;
+    }
+    #pictureFlex > .picture > .vertical {
+        width: 180px;
+        height: 310px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 30px;
+    }
+   /* .pictureGrid {
+    
+    grid-template-rows: auto;
+   } */
+}
+/******************************************************************************************************************/
+/* responsive for max width 320px <= device width */
+@media only screen and (max-device-width: 320px) and (orientation: portrait) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 10px;
+        line-height: 13px;
+        word-spacing: 2px;
+        padding: 0 5px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        height: 180px;
+        width: 300px;
+    }
+    #pictureFlex > .picture > .vertical {
+        width: 190px;
+        height: 370px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        /* align-items: start; */
+        row-gap: 30px;
+        /* height: 1500px; */
+    }
+    /* .pictureGrid {
+    grid-template-rows: 680px;
+    } */
+}
+/*********************/
+@media only screen and (max-device-width: 320px) and (max-device-height: 320px) and (orientation: landscape) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 10px;
+        line-height: 13px;
+        padding: 0 5px;
+        word-spacing: 2px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        height: 180px;
+        width: 300px;
+    }
+    #pictureFlex > .picture > .vertical {
+        width: 180px;
+        height: 310px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 30px;
+    }
+   /* .pictureGrid {
+    grid-template-rows: 630px;
+   } */
+}
+/***********************************************************************************************************************************************/
+/* responsive for min width 320px/max width 480px(Iphone 4 and 4S) pixel 2*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        line-height: 21px;
+        padding: 0 10px;
+        word-spacing: 3px;
+    }
+    
+    #pictureFlex > .picture > .horizontal {
+        width: 300px;
+        height: 180px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 320px;
+        width: 180px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 40px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 680px;
+   } */
+}
+/***********************************/
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (min-device-height: 320px) and (max-device-height: 480px) and (orientation: landscape) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        line-height: 20px;
+        padding: 0 10px;
+        word-spacing: 3px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 400px;
+        height: 210px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 300px;
+        width: 190px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 50px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 710px;
+   } */
+}
+/**********************************/
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (-moz-min-device-pixel-ratio: 2) and (-o-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2) and (orientation: portrait) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        line-height: 21px;
+        padding: 0 10px;
+        word-spacing: 3px;
+    }
+    
+    #pictureFlex > .picture > .horizontal {
+        width: 300px;
+        height: 180px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 320px;
+        width: 180px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 40px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 680px;
+   } */
+}
+/*************************************/
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (min-device-height: 320px) and (max-device-height: 480px) and (-webkit-min-device-pixel-ratio: 2) and (-moz-min-device-pixel-ratio: 2) and (-o-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2) and (orientation: landscape) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        line-height: 20px;
+        padding: 0 10px;
+        word-spacing: 3px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 400px;
+        height: 210px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 300px;
+        width: 190px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 50px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 710px;
+   } */
+}
+/***************************************************************************************************************************************************************************************************/
+/* responsive for min width 320px/max width 568px  5C pixel 2*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        line-height: 22px;
+        word-spacing: 3px;
+        padding: 0 15px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 300px;
+        height: 180px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 300px;
+        width: 180px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 40px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 660px;
+   } */
+}
+/************************************/
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (min-device-height: 320px) and (max-device-height: 568px) and (orientation: landscape) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 15px;
+        word-spacing: 3px;
+        line-height: 22px;
+        padding: 0 15px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 470px;
+        height: 250px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 340px;
+        width: 210px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 50px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 800px;
+   } */
+}
+/************************************/
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (-moz-min-device-pixel-ratio: 2) and (-o-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2) and (orientation: portrait) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        line-height: 22px;
+        word-spacing: 3px;
+        padding: 0 15px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 300px;
+        height: 180px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 300px;
+        width: 180px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 40px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 660px;
+   } */
+}
+/************************************/
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (min-device-height: 320px) and (max-device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) and (-moz-min-device-pixel-ratio: 2) and (-o-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2) and (orientation: landscape) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 15px;
+        word-spacing: 3px;
+        line-height: 22px;
+        padding: 0 15px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 470px;
+        height: 250px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 340px;
+        width: 210px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 50px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 800px;
+   } */
+}
+/*************************************************************************************************************************************************************************/
+/* responsive for min width 375px/max width 667px 6S pixel 2 */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 0 20px;
+        word-spacing: 3px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 330px;
+        height: 180px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 350px;
+        width: 200px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 40px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 710px;
+   } */
+}
+/*************************************/
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (min-device-height: 375px) and (max-device-height: 667px) and (orientation: landscape) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 15px;
+        line-height: 24px;
+        word-spacing: 3px;
+        padding: 0 20px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 550px;
+        height: 280px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 350px;
+        width: 220px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 50px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 840px;
+   } */
+}
+/***********************************/
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (-moz-min-device-pixel-ratio: 2) and (-o-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2) and (orientation: portrait) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 0 20px;
+        word-spacing: 3px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 330px;
+        height: 180px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 350px;
+        width: 200px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 40px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 710px;
+   } */
+   
+}
+/****************************************/
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (min-device-height: 375px) and (max-device-height: 667px) and (-webkit-min-device-pixel-ratio: 2) and (-moz-min-device-pixel-ratio: 2) and (-o-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2) and (orientation: landscape) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 15px;
+        line-height: 24px;
+        word-spacing: 3px;
+        padding: 0 20px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 550px;
+        height: 280px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 350px;
+        width: 220px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 50px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 840px;
+   } */
+}
+/******************************************************************************************************************************************/
+/* responsive for min width 414px/max width 736px(Iphone 6+, 7+, 8+) pixel 3 */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 17px;
+        line-height: 25px;
+        word-spacing: 3px;
+        padding: 0 20px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 390px;
+        height: 220px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 390px;
+        width: 240px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 50px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 830px;
+   } */
+}
+/***********************************/
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (min-device-height: 414px) and (max-device-height: 736px) and (orientation: landscape) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 17px;
+        line-height: 28px;
+        padding: 0 20px;
+        word-spacing: 3px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 670px;
+        height: 360px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 500px;
+        width: 260px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 50px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 1070px;
+   } */
+}
+/*********************************/
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (-moz-min-device-pixel-ratio: 3) and (-o-min-device-pixel-ratio: 3) and (min-device-pixel-ratio: 3) and (orientation: portrait) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 17px;
+        line-height: 25px;
+        word-spacing: 3px;
+        padding: 0 20px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 390px;
+        height: 220px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 390px;
+        width: 240px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 50px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 830px;
+   } */
+}
+/***********************************/
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (min-device-height: 414px) and (max-device-height: 736px) and (-webkit-min-device-pixel-ratio: 3) and (-moz-min-device-pixel-ratio: 3) and (-o-min-device-pixel-ratio: 3) and (min-device-pixel-ratio: 3) and (orientation: landscape) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 17px;
+        line-height: 28px;
+        padding: 0 20px;
+        word-spacing: 3px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 670px;
+        height: 360px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 500px;
+        width: 260px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 50px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 1070px;
+   } */
+}
+/*********************************************************************************************************************************************/
+/* responsive for min width 375px/max width 812px(iphone X) pixel 3 */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 17px;
+        line-height: 28px;
+        word-spacing: 3px;
+        padding: 0 20px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 370px;
+        height: 220px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 390px;
+        width: 240px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 70px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 880px;
+   } */
+}
+/************************************/
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (min-device-height: 375px) and (max-device-height: 812px) and (orientation: landscape) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 19px;
+        line-height: 30px;
+        padding: 0 20px;
+        word-spacing: 3px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 470px;
+        height: 250px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 500px;
+        width: 260px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 70px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 1140px;
+   } */
+}
+/*************************************/
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (-moz-min-device-pixel-ratio: 3) and (-o-min-device-pixel-ratio: 3) and (min-device-pixel-ratio: 3) and (orientation: portrait) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 17px;
+        line-height: 28px;
+        word-spacing: 3px;
+        padding: 0 20px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 370px;
+        height: 220px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 390px;
+        width: 240px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 70px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 880px;
+   } */
+}
+/************************************/
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (min-device-height: 375px) and (max-device-height: 812px) and (-webkit-min-device-pixel-ratio: 3) and (-moz-min-device-pixel-ratio: 3) and (-o-min-device-pixel-ratio: 3) and (min-device-pixel-ratio: 3) and (orientation: landscape) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 19px;
+        line-height: 30px;
+        padding: 0 20px;
+        word-spacing: 3px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 470px;
+        height: 250px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 500px;
+        width: 260px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 70px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 1140px;
+   } */
+}
+/***************************************************************************************************************************/
+/*
+GALAXY PHONES  ||||||
+*/
+
+/* responsive for min width 360px/max width 640px(galaxy S3) pixel 2 */
+@media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 17px;
+        line-height: 25px;
+        word-spacing: 3px;
+        padding: 0 20px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 350px;
+        height: 185px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 390px;
+        width: 240px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 70px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 840px;
+   } */
+}
+/***********************************/
+@media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (min-device-height: 360px) and (max-device-height: 640px) and (orientation: landscape) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 17px;
+        line-height: 28px;
+        padding: 0 20px;
+        word-spacing: 3px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 600px;
+        height: 300px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 400px;
+        width: 260px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 90px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 1000px;
+   } */
+}
+/*********************************/
+@media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (-webkit-device-pixel-ratio: 2) and (-moz-device-pixel-ratio: 2) and (-o-device-pixel-ratio: 2) and (device-pixel-ratio: 2) and (orientation: portrait) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 17px;
+        line-height: 25px;
+        word-spacing: 3px;
+        padding: 0 20px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 350px;
+        height: 185px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 390px;
+        width: 240px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 70px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 840px;
+   } */
+}
+/************************************/
+@media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (min-device-height: 360px) and (max-device-height: 640px) and (-webkit-device-pixel-ratio: 2) and (-moz-device-pixel-ratio: 2) and (-o-device-pixel-ratio: 2) and (device-pixel-ratio: 2) and (orientation: landscape) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 17px;
+        line-height: 28px;
+        padding: 0 20px;
+        word-spacing: 3px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 600px;
+        height: 300px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 400px;
+        width: 260px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 90px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 1000px;
+   } */
+}
+/***********************************************************************************************************************************************/
+/* responsive for min width 360px/max width 640px(galaxy S4, S5, Note3)pixel: 3 =======  HTC PHONE = HTC One, Google pixel */
+/* @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 17px;
+        line-height: 25px;
+        word-spacing: 3px;
+        padding: 0 20px;
+    }
+    .bigpad li {
+        padding: 7px;
+        font-size: 17px;
+       }
+    #pictureFlex > .picture > .horizontal {
+        width: 430px;
+        height: 270px;
+       }
+   .pictureGrid {
+    padding-bottom: 50px;
+   }
+} */
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/* @media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (min-device-height: 360px) and (max-device-height: 640px) and (orientation: landscape) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 17px;
+        line-height: 28px;
+        padding: 0 20px;
+        word-spacing: 3px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 460px;
+        height: 290px;
+       }
+       .bigpad li {
+        padding: 7px;
+        font-size: 17px;
+        text-align: center;
+    }
+   .pictureGrid {
+    padding-bottom: 50px;
+   }
+} */
+/*******************************************/
+/* @media only screen and (min-device-width: 320px) and (max-device-width: 640px) {
+    #articleContainer {
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: 390px;
+    }
+    #articleContainercontent {
+        grid-column: 1/8;
+    }
+} */
+/*++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/* @media only screen and (min-device-width: 320px) and (max-device-width: 640px) and (min-device-height: 320px) and (max-device-height: 640px) and (orientation: landscape) {
+    #articleContainer {
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: 390px;
+    }
+    #articleContainercontent {
+        grid-column: 1/8;
+    }
+} */
+/******************************************/
+@media only screen and (min-device-width: 320px) and (max-device-width: 640px) and (-webkit-device-pixel-ratio: 3) and (-moz-device-pixel-ratio: 3) and (-o-device-pixel-ratio: 3) and (device-pixel-ratio: 3) and (orientation: portrait) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 17px;
+        line-height: 25px;
+        word-spacing: 3px;
+        padding: 0 20px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 350px;
+        height: 185px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 400px;
+        width: 240px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 70px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 860px;
+   } */
+}
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 640px) and (min-device-height: 320px) and (max-device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (-moz-device-pixel-ratio: 3) and (-o-device-pixel-ratio: 3) and (device-pixel-ratio: 3) and (orientation: landscape) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 17px;
+        line-height: 28px;
+        padding: 0 20px;
+        word-spacing: 3px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 600px;
+        height: 300px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 450px;
+        width: 260px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 90px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 1080px;
+   } */
+}
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+@media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (-webkit-device-pixel-ratio: 3) and (-moz-device-pixel-ratio: 3) and (-o-device-pixel-ratio: 3) and (device-pixel-ratio: 3) and (orientation: portrait) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 17px;
+        line-height: 25px;
+        word-spacing: 3px;
+        padding: 0 20px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 350px;
+        height: 185px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 400px;
+        width: 240px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 70px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 860px;
+   } */
+}
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+@media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (min-device-height: 360px) and (max-device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (-moz-device-pixel-ratio: 3) and (-o-device-pixel-ratio: 3) and (device-pixel-ratio: 3) and (orientation: landscape) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 17px;
+        line-height: 28px;
+        padding: 0 20px;
+        word-spacing: 3px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 600px;
+        height: 300px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 450px;
+        width: 260px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 90px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 1080px;
+   } */
+}
+/*********************************************************************************************************************************************************************************************/
+/* responsive for min width 360px/max width 640px(galaxy S6) pixel 4 ======== GOOGLE PIXEL = Google Pixel XL */
+/* check the previous @media for the default min 360px/max 640px */
+@media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (-webkit-device-pixel-ratio: 4) and (-moz-device-pixel-ratio: 4) and (-o-device-pixel-ratio: 4) and (device-pixel-ratio: 4) and (orientation: portrait) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 17px;
+        line-height: 26px;
+        word-spacing: 3px;
+        padding: 0 20px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 350px;
+        height: 185px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 400px;
+        width: 240px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 70px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 860px;
+   } */
+}
+/***************************************************/
+@media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (min-device-height: 360px) and (max-device-height: 640px) and (-webkit-device-pixel-ratio: 4) and (-moz-device-pixel-ratio: 4) and (-o-device-pixel-ratio: 4) and (device-pixel-ratio: 4) and (orientation: landscape) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 18px;
+        line-height: 28px;
+        padding: 0 20px;
+        word-spacing: 3px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 600px;
+        height: 300px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 450px;
+        width: 260px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 90px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 1080px;
+   } */
+}
+/************************************************************************************************************************************************************************/
+/*
+NEXUS PHONES  ||||||
+*/
+/* responsive for min width 384px/max width 640px(Nexus 4 [alt])  pixel 2*/
+/* @media only screen and (min-device-width: 384px) and (max-device-width: 640px) {
+    #articleContainer {
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: 390px;
+      }
+    #articleContainercontent {
+        grid-column: 1/8;
+    }
+} */
+/***********************************/
+/* @media only screen and (min-device-width: 384px) and (max-device-width: 640px) and (-webkit-device-pixel-ratio: 2) and (-moz-device-pixel-ratio: 2) and (-o-device-pixel-ratio: 2) and (device-pixel-ratio: 2) and (orientation: portrait) {
+    #articleContainer {
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: 390px;
+    }
+    #articleContainercontent {
+        grid-column: 1/8;
+    }
+} */
+/************************************/
+/* @media only screen and (min-device-width: 384px) and (max-device-width: 640px) and (min-device-height: 384px) and (max-device-height: 640px) and (-webkit-device-pixel-ratio: 2) and (-moz-device-pixel-ratio: 2) and (-o-device-pixel-ratio: 2) and (device-pixel-ratio: 2) and (orientation: landscape) {
+    #articleContainer {
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: 390px;
+    }
+    #articleContainercontent {
+        grid-column: 1/8;
+    }
+}
+********************************************************this was commented: similar view port to galaxy S3******************************************************************************************************************* */
+/* responsive for min width 384px/max width 592px(Nexus 4) pixel 2 */
+/* @media only screen and (min-device-width: 384px) and (max-device-width: 640px) {
+    #articleContainer {
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: 390px;
+      }
+    #articleContainercontent {
+        grid-column: 1/8;
+    }
+} */
+/***********************************/
+/* @media only screen and (min-device-width: 384px) and (max-device-width: 592px) and (-webkit-device-pixel-ratio: 2) and (-moz-device-pixel-ratio: 2) and (-o-device-pixel-ratio: 2) and (device-pixel-ratio: 2) and (orientation: portrait) {
+    #articleContainer {
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: 390px;
+    }
+    #articleContainercontent {
+        grid-column: 1/8;
+    }
+} */
+/************************************/
+/* @media only screen and (min-device-width: 384px) and (max-device-width: 592px) and (min-device-height: 384px) and (max-device-height: 592px) and (-webkit-device-pixel-ratio: 2) and (-moz-device-pixel-ratio: 2) and (-o-device-pixel-ratio: 2) and (device-pixel-ratio: 2) and (orientation: landscape) {
+    #articleContainer {
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: 390px;
+    }
+    #articleContainercontent {
+        grid-column: 1/8;
+    }
+}
+********************************************************this was commented: similar view port to galaxy S3******************************************************************************************************************* */
+/* responsive for min width 360px/max width 592px (Nexus 5) pixel 3*/
+/* @media only screen and (min-device-width: 360px) and (max-device-width: 592px) {
+    #articleContainer {
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: 390px;
+    }
+    #articleContainercontent {
+        grid-column: 1/8;
+    }
+} */
+/************************************************/
+/* @media only screen and (min-device-width: 360px) and (max-device-width: 592px) and (-webkit-device-pixel-ratio: 3) and (-moz-device-pixel-ratio: 3) and (-o-device-pixel-ratio: 3) and (device-pixel-ratio: 3) and (orientation: portrait) {
+    #articleContainer {
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: 390px;
+    }
+    #articleContainercontent {
+        grid-column: 1/8;
+    }
+} */
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/* @media only screen and (min-device-width: 360px) and (max-device-width: 592px) and (min-device-height: 360px) and (max-device-height: 592px) and (-webkit-device-pixel-ratio: 3) and (-moz-device-pixel-ratio: 3) and (-o-device-pixel-ratio: 3) and (device-pixel-ratio: 3) and (orientation: landscape) {
+    #articleContainer {
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: 390px;
+    }
+    #articleContainercontent {
+        grid-column: 1/8;
+    }
+} */
+/**************************************************this is commented: similar to galaxy S4*********************************************************************************************************************/
+/* responsive for min width 412px/ max width 732px(Nexus 6, 6P) pixel 4 */
+@media only screen and (min-device-width: 412px) and (max-device-width: 732px) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 19px;
+        line-height: 29px;
+        word-spacing: 4px;
+        padding: 0 20px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 400px;
+        height: 215px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 500px;
+        width: 280px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 70px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 980px;
+   } */
+}
+/*************************************************/
+@media only screen and (min-device-width: 412px) and (max-device-width: 732px) and (min-device-height: 412px) and (max-device-height: 732px) and (orientation: landscape) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 19px;
+        line-height: 29px;
+        padding: 0 20px;
+        word-spacing: 4px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 700px;
+        height: 360px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 500px;
+        width: 310px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 90px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 1190px;
+   } */
+}
+/*******************************************/
+@media only screen and (min-device-width: 412px) and (max-device-width: 732px) and (-webkit-device-pixel-ratio: 4) and (-moz-device-pixel-ratio: 4) and (-o-device-pixel-ratio: 4) and (device-pixel-ratio: 4) and (orientation: portrait) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 19px;
+        line-height: 29px;
+        word-spacing: 4px;
+        padding: 0 20px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 400px;
+        height: 215px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 500px;
+        width: 280px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 70px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 980px;
+   } */
+}
+/***************************************************/
+@media only screen and (min-device-width: 412px) and (max-device-width: 732px) and (min-device-height: 412px) and (max-device-height: 732px) and (-webkit-device-pixel-ratio: 4) and (-moz-device-pixel-ratio: 4) and (-o-device-pixel-ratio: 4) and (device-pixel-ratio: 4) and (orientation: landscape) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 19px;
+        line-height: 29px;
+        padding: 0 20px;
+        word-spacing: 4px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 700px;
+        height: 360px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 500px;
+        width: 310px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 90px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 1190px;
+   } */
+}
+/*********************************************************************************************************************************************************/
+/* responsive for min width 360px/max width 592px (Nexus 6 and 6P [alt]) pixel 4*/
+@media only screen and (min-device-width: 360px) and (max-device-width: 592px) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 19px;
+        line-height: 29px;
+        word-spacing: 4px;
+        padding: 0 20px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 350px;
+        height: 215px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 450px;
+        width: 250px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 70px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 940px;
+   } */
+}
+/************************************************/
+@media only screen and (min-device-width: 360px) and (max-device-width: 592px) and (min-device-height: 360px) and (max-device-height: 592px) and (orientation: landscape) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 19px;
+        line-height: 29px;
+        padding: 0 20px;
+        word-spacing: 4px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 560px;
+        height: 320px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 450px;
+        width: 250px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 90px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 1100px;
+   } */
+}
+/*****************************************/
+@media only screen and (min-device-width: 360px) and (max-device-width: 592px) and (-webkit-device-pixel-ratio: 4) and (-moz-device-pixel-ratio: 4) and (-o-device-pixel-ratio: 4) and (device-pixel-ratio: 4) and (orientation: portrait) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 19px;
+        line-height: 29px;
+        word-spacing: 4px;
+        padding: 0 20px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 350px;
+        height: 215px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 450px;
+        width: 250px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 70px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 940px;
+   } */
+}
+/*************************************************/
+@media only screen and (min-device-width: 360px) and (max-device-width: 592px) and (min-device-height: 360px) and (max-device-height: 592px) and (-webkit-device-pixel-ratio: 4) and (-moz-device-pixel-ratio: 4) and (-o-device-pixel-ratio: 4) and (device-pixel-ratio: 4) and (orientation: landscape) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 19px;
+        line-height: 29px;
+        padding: 0 20px;
+        word-spacing: 4px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 560px;
+        height: 320px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 450px;
+        width: 250px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 90px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 1100px;
+   } */
+}
+/**********************************************************************************************************************************************************************************************************/
+/*
+WINDOWS PHONES  ||||||
+*/
+/* responsive for min width 480px/max width 800px(windows phone) */
+@media only screen and (min-device-width: 480px) and (max-device-width: 800px) and (min-device-height: 480px) and (max-device-height: 800px) and (orientation: portrait) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        line-height: 30px;
+        word-spacing: 4px;
+        padding: 0 20px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 450px;
+        height: 250px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 460px;
+        width: 260px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 70px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 980px;
+   } */
+}
+/**********************************/
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 800px) and (min-device-height: 480px) and (max-device-height: 800px) and (orientation: landscape) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        line-height: 30px;
+        padding: 0 20px;
+        word-spacing: 4px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 470px;
+        height: 250px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 490px;
+        width: 290px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 90px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 1180px;
+   } */
+}
+/*********************************************************************************************************************************************************************/
+/*
+ipad tablet ||||||
+*/
+/* responsive for min width 768px/max width 1024px(ipad 1, 2, Mini) pixel 1 */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 25px;
+        line-height: 40px;
+        word-spacing: 5px;
+        padding: 10px 20px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 650px;
+        height: 400px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 660px;
+        width: 400px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 80px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 1370px;
+   } */
+ }
+ /*********************************/
+ @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (min-device-height: 768px) and (max-device-height: 1024px) and (orientation: landscape) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 25px;
+        line-height: 40px;
+        padding: 10px 20px;
+        word-spacing: 5px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 600px;
+        height: 300px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 660px;
+        width: 400px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 100px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 1460px;
+   } */
+ }
+ /*********************************/
+ @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) and (-moz-min-device-pixel-ratio: 1) and (-o-min-device-pixel-ratio: 1) and (min-device-pixel-ratio: 1) and (orientation: portrait) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 25px;
+        line-height: 40px;
+        word-spacing: 5px;
+        padding: 10px 20px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 650px;
+        height: 400px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 660px;
+        width: 400px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 80px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 1370px;
+   } */
+ }
+ /*************************************/
+ @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (min-device-height: 768px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 1) and (-moz-min-device-pixel-ratio: 1) and (-o-min-device-pixel-ratio: 1) and (min-device-pixel-ratio: 1) and (orientation: landscape) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 25px;
+        line-height: 40px;
+        padding: 10px 20px;
+        word-spacing: 5px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 600px;
+        height: 300px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 660px;
+        width: 400px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 100px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 1460px;
+   } */
+ }
+ /***************************************************************************************************************************************************************************/
+ /* responsive for min width 820px/max width 1180px(ipad air) pixel 1 */
+@media only screen and (min-device-width: 820px) and (max-device-width: 1180px) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 25px;
+        line-height: 42px;
+        word-spacing: 5px;
+        padding: 10px 20px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 450px;
+        height: 250px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 660px;
+        width: 410px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 80px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 1380px;
+   } */
+}
+/*********************************/
+@media only screen and (min-device-width: 820px) and (max-device-width: 1180px) and (min-device-height: 820px) and (max-device-height: 1180px) and (orientation: landscape) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 25px;
+        line-height: 42px;
+        padding: 10px 20px;
+        word-spacing: 5px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 600px;
+        height: 300px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 660px;
+        width: 410px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 100px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 1530px;
+   } */
+}
+/******************************/
+@media only screen and (min-device-width: 820px) and (max-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) and (-moz-min-device-pixel-ratio: 1) and (-o-min-device-pixel-ratio: 1) and (min-device-pixel-ratio: 1) and (orientation: portrait) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 25px;
+        line-height: 42px;
+        word-spacing: 5px;
+        padding: 10px 20px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 450px;
+        height: 250px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 660px;
+        width: 410px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 80px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 1380px;
+   } */
+}
+/***********************************/
+@media only screen and (min-device-width: 820px) and (max-device-width: 1180px) and (min-device-height: 820px) and (max-device-height: 1180px) and (-webkit-min-device-pixel-ratio: 1) and (-moz-min-device-pixel-ratio: 1) and (-o-min-device-pixel-ratio: 1) and (min-device-pixel-ratio: 1) and (orientation: landscape) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 25px;
+        line-height: 42px;
+        padding: 10px 20px;
+        word-spacing: 5px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 600px;
+        height: 300px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 660px;
+        width: 410px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 100px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 1530px;
+   } */
+}
+/***************************************************************************************************************************************************************/
+/* responsive for min width 768px/max width 1024px(ipad 3, 4, pro 9.7) pixel 2 */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 25px;
+        line-height: 42px;
+        word-spacing: 5px;
+        padding: 10px 20px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 660px;
+        height: 400px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 660px;
+        width: 410px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 80px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 1380px;
+   } */
+ }
+ /*********************************/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (min-device-height: 768px) and (max-device-height: 1024px) and (orientation: landscape) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 25px;
+        line-height: 42px;
+        padding: 10px 20px;
+        word-spacing: 5px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 600px;
+        height: 300px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 660px;
+        width: 410px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 100px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 1530px;
+   } */
+}
+ /************************************/
+ @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (-moz-min-device-pixel-ratio: 2) and (-o-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2) and (orientation: portrait) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 25px;
+        line-height: 42px;
+        word-spacing: 5px;
+        padding: 10px 20px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 660px;
+        height: 400px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 660px;
+        width: 410px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 80px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 1380px;
+   } */
+}
+ /*************************************/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (min-device-height: 768px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (-moz-min-device-pixel-ratio: 2) and (-o-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2) and (orientation: landscape) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 25px;
+        line-height: 42px;
+        padding: 10px 20px;
+        word-spacing: 5px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 600px;
+        height: 300px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 660px;
+        width: 410px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 100px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 1530px;
+   } */
+}
+ /***************************************************************************************************************************************************************************/
+ /* responsive for min width 834px/max width 1112px(ipad pro 10.5) pixel 2  */
+@media only screen and (min-device-width: 834px) and (max-device-width: 1112px) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 25px;
+        line-height: 42px;
+        word-spacing: 6px;
+        padding: 10px 20px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 450px;
+        height: 250px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 660px;
+        width: 410px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 100px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 1400px;
+   } */
+}
+/*********************************/
+@media only screen and (min-device-width: 834px) and (max-device-width: 1112px) and (min-device-height: 834px) and (max-device-height: 1112px) and (orientation: landscape) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 25px;
+        line-height: 43px;
+        padding: 10px 20px;
+        word-spacing: 6px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 600px;
+        height: 300px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 660px;
+        width: 410px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 120px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 1550px;
+   } */
+}
+/********************************/
+@media only screen and (min-device-width: 834px) and (max-device-width: 1112px) and (-webkit-min-device-pixel-ratio: 2) and (-moz-min-device-pixel-ratio: 2) and (-o-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2) and (orientation: portrait) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 25px;
+        line-height: 42px;
+        word-spacing: 6px;
+        padding: 10px 20px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 450px;
+        height: 250px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 660px;
+        width: 410px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 100px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 1400px;
+   } */
+}
+/***********************************/
+@media only screen and (min-device-width: 834px) and (max-device-width: 1112px) and (min-device-height: 834px) and (max-device-height: 1112px) and (-webkit-min-device-pixel-ratio: 2) and (-moz-min-device-pixel-ratio: 2) and (-o-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2) and (orientation: landscape) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 25px;
+        line-height: 43px;
+        padding: 10px 20px;
+        word-spacing: 6px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 600px;
+        height: 300px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 660px;
+        width: 410px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 120px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 1550px;
+   } */
+}
+/***************************************************************************************************************************************************************/
+/* responsive for min width 1024px/max width 1366px(ipad pro 12.9) pixel 2 */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 27px;
+        line-height: 42px;
+        word-spacing: 6px;
+        padding: 10px 20px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 600px;
+        height: 300px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 710px;
+        width: 415px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 100px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 1460px;
+   } */
+ }
+ /*********************************/
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (min-device-height: 1024px) and (max-device-height: 1366px) and (orientation: landscape) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 29px;
+        line-height: 45px;
+        padding: 10px 20px;
+        word-spacing: 7px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 770px;
+        height: 410px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 710px;
+        width: 450px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 120px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 1630px;
+   } */
+}
+ /******************************/
+ @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (-moz-min-device-pixel-ratio: 2) and (-o-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2) and (orientation: portrait) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 27px;
+        line-height: 42px;
+        word-spacing: 6px;
+        padding: 10px 20px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 600px;
+        height: 300px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 710px;
+        width: 415px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 100px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 1460px;
+   } */
+ }
+ /*************************************/
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (min-device-height: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (-moz-min-device-pixel-ratio: 2) and (-o-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2) and (orientation: landscape) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 29px;
+        line-height: 45px;
+        padding: 10px 20px;
+        word-spacing: 7px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 770px;
+        height: 410px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 710px;
+        width: 450px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 120px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 1630px;
+   } */
+ }
+ /***************************************************************************************************************************************************************************/
+/*
+Galaxy tablet ||||||
+*/
+/* responsive for min width 800px/max width 1280px(galaxy tab 2) */
+@media only screen and (min-device-width: 800px) and (max-device-width: 1280px) and (orientation: portrait) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 27px;
+        line-height: 42px;
+        word-spacing: 6px;
+        padding: 10px 20px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 470px;
+        height: 250px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 690px;
+        width: 415px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 100px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 1480px;
+   } */
+}
+/*******************************/
+@media only screen and (min-device-width: 800px) and (max-device-width: 1280px) and (min-device-height: 800px) and (max-device-height: 1280px) and (orientation: landscape) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 29px;
+        line-height: 45px;
+        padding: 10px 20px;
+        word-spacing: 7px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 600px;
+        height: 300px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 710px;
+        width: 450px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 120px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 1635px;
+   } */
+}
+/* responsive for min width 800px/max width 1280px(galaxy tab S) pixel 2*/
+@media only screen and (min-device-width: 800px) and (max-device-width: 1280px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 27px;
+        line-height: 42px;
+        word-spacing: 6px;
+        padding: 10px 20px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 470px;
+        height: 250px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 690px;
+        width: 415px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 100px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 1480px;
+   } */
+}
+/************************************/
+@media only screen and (min-device-width: 800px) and (max-device-width: 1280px) and (min-device-height: 800px) and (max-device-height: 1280px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 29px;
+        line-height: 45px;
+        padding: 10px 20px;
+        word-spacing: 7px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 600px;
+        height: 300px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 710px;
+        width: 450px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 120px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 1635px;
+   } */
+}
+/**********************************************************************************************************************************************************************************/
+/*
+Nexus tablet ||||||
+*/
+/* responsive for min width 600px/max width 960px(Nexus 7) pixel 1.331/1.332 */
+@media only screen and (min-device-width: 600px) and (max-device-width: 960px) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 25px;
+        line-height: 42px;
+        word-spacing: 5px;
+        padding: 10px 20px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 580px;
+        height: 370px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 600px;
+        width: 300px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 90px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 1320px;
+   } */
+}
+/***********************************************/
+@media only screen and (min-device-width: 600px) and (max-device-width: 960px) and (min-device-height: 600px) and (max-device-height: 960px) and (orientation: landscape) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 25px;
+        line-height: 42px;
+        padding: 10px 20px;
+        word-spacing: 5px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 470px;
+        height: 250px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 600px;
+        width: 300px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 120px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 1640px;
+   } */
+}
+/************************************/
+@media only screen and (min-device-width: 600px) and (max-device-width: 960px) and (-webkit-min-device-pixel-ratio: 1.331) and (-webkit-max-device-pixel-ratio: 1.332) and (-moz-min-device-pixel-ratio: 1.331) and (-moz-max-device-pixel-ratio: 1.332) and (-o-min-device-pixel-ratio: 1.331) and (-o-max-device-pixel-ratio: 1.332) and (min-device-pixel-ratio: 1.331) and (max-device-pixel-ratio: 1.332) and (orientation: portrait) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 25px;
+        line-height: 42px;
+        word-spacing: 5px;
+        padding: 10px 20px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 580px;
+        height: 370px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 600px;
+        width: 300px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 90px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 1320px;
+   } */
+}
+/*************************************************/
+@media only screen and (min-device-width: 600px) and (max-device-width: 960px) and (min-device-height: 600px) and (max-device-height: 960px) and (-webkit-min-device-pixel-ratio: 1.331) and (-webkit-max-device-pixel-ratio: 1.332) and (-moz-min-device-pixel-ratio: 1.331) and (-moz-max-device-pixel-ratio: 1.332) and (-o-min-device-pixel-ratio: 1.331) and (-o-max-device-pixel-ratio: 1.332) and (min-device-pixel-ratio: 1.331) and (max-device-pixel-ratio: 1.332) and (orientation: landscape) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 25px;
+        line-height: 42px;
+        padding: 10px 20px;
+        word-spacing: 5px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 470px;
+        height: 250px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 600px;
+        width: 300px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 120px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 1640px;
+   } */
+}
+/******************************************************************************************************************************************************************************************************************************/
+
+/*
+Laptop ||||||
+*/
+/* responsive for min width 1200px/max width 1600px(non-retina) */
+@media only screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 30px;
+        line-height: 45px;
+        padding: 10px 20px;
+        word-spacing: 7px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 580px;
+        height: 370px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 600px;
+        width: 400px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 90px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 1320px;
+   } */
+}
+/***************************************/
+@media only screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) and (-moz-min-device-pixel-ratio: 1) and (-o-min-device-pixel-ratio: 1) and (min-device-pixel-ratio: 1) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 30px;
+        line-height: 45px;
+        padding: 10px 20px;
+        word-spacing: 7px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 580px;
+        height: 370px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 600px;
+        width: 400px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 90px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 1320px;
+   } */
+}
+ /* retina */
+@media only screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (-moz-min-device-pixel-ratio: 2) and (-o-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 30px;
+        line-height: 45px;
+        padding: 10px 20px;
+        word-spacing: 7px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 580px;
+        height: 370px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 600px;
+        width: 400px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 90px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 1320px;
+   } */
+}
+/************************************************************************************************************************************************************************************************************************************************/
+/* responsive for min width 1536px/max width 2048px(Nexus 9) pixel 1.331/1.332 */
+@media only screen and (min-device-width: 1536px) and (max-device-width: 2048px) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 33px;
+        line-height: 55px;
+        padding: 20px 30px;
+        word-spacing: 8px;
+        
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 770px;
+        height: 410px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 710px;
+        width: 450px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 120px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 1640px;
+   } */
+}
+/***************************************/
+@media only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (min-device-height: 1536px) and (max-device-height: 2048px) and (orientation: landscape) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 34px;
+        line-height: 57px;
+        padding: 20px 30px;
+        word-spacing: 8px;  
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 900px;
+        height: 490px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 710px;
+        width: 450px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 120px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 1640px;
+   } */
+}
+/********************************/
+@media only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (-webkit-min-device-pixel-ratio: 1.331) and (-webkit-max-device-pixel-ratio: 1.332) and (-moz-min-device-pixel-ratio: 1.331) and (-moz-max-device-pixel-ratio: 1.332) and (-o-min-device-pixel-ratio: 1.331) and (-o-max-device-pixel-ratio: 1.332) and (min-device-pixel-ratio: 1.331) and (max-device-pixel-ratio: 1.332) and (orientation: portrait) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 33px;
+        line-height: 55px;
+        padding: 20px 30px;
+        word-spacing: 8px;
+        
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 770px;
+        height: 410px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 710px;
+        width: 450px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 120px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 1640px;
+   } */
+}
+/****************************************/
+@media only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (min-device-height: 1536px) and (max-device-height: 2048px) and (-webkit-min-device-pixel-ratio: 1.331) and (-webkit-max-device-pixel-ratio: 1.332) and (-moz-min-device-pixel-ratio: 1.331) and (-moz-max-device-pixel-ratio: 1.332) and (-o-min-device-pixel-ratio: 1.331) and (-o-max-device-pixel-ratio: 1.332) and (min-device-pixel-ratio: 1.331) and (max-device-pixel-ratio: 1.332) and (orientation: landscape) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 34px;
+        line-height: 57px;
+        padding: 20px 30px;
+        word-spacing: 8px;  
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 900px;
+        height: 490px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 710px;
+        width: 450px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 120px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 1640px;
+   } */
+}
+/***************************************************************************************************************************************************************************/
+/*
+Biggest screen  ||||||
+*/
+/* responsive for min width 2048px(biggest screen) */
+@media only screen and (min-device-width: 2048px) and (min-device-height: 2048px) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 34px;
+        line-height: 57px;
+        padding: 20px 30px;
+        word-spacing: 8px;
+        
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 900px;
+        height: 490px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 730px;
+        width: 460px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 120px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 1690px;
+   } */
+}
+/******************************************************************************************************************************************************************************************/
+/*
+Kindle fire  ||||||
+*/
+/* responsive for min width 800px/max width 1280px(Kindle fire hd 7) pixel 1.5 */
+@media only screen and (min-device-width: 800px) and (max-device-width: 1280px) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 27px;
+        line-height: 42px;
+        word-spacing: 6px;
+        padding: 10px 20px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 470px;
+        height: 250px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 600px;
+        width: 300px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 100px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 1560px;
+   } */
+}
+/*************************************/
+@media only screen and (min-device-width: 800px) and (max-device-width: 1280px) and (min-device-height: 800px) and (max-device-height: 1280px) and (orientation: landscape) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 29px;
+        line-height: 45px;
+        padding: 10px 20px;
+        word-spacing: 7px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 600px;
+        height: 300px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 600px;
+        width: 300px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 120px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 1640px;
+   } */
+}
+/*********************************/
+@media only screen and (min-device-width: 800px) and (max-device-width: 1280px) and (-webkit-min-device-pixel-ratio: 1.5) and (-moz-min-device-pixel-ratio: 1.5) and (-o-min-device-pixel-ratio: 1.5) and (min-device-pixel-ratio: 1.5) and (orientation: portrait) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 27px;
+        line-height: 42px;
+        word-spacing: 6px;
+        padding: 10px 20px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 470px;
+        height: 250px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 600px;
+        width: 300px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 100px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 1560px;
+   } */
+}
+/***********************************/
+@media only screen and (min-device-width: 800px) and (max-device-width: 1280px) and (min-device-height: 800px) and (max-device-height: 1280px) and (-webkit-min-device-pixel-ratio: 1.5) and (-moz-min-device-pixel-ratio: 1.5) and (-o-min-device-pixel-ratio: 1.5) and (min-device-pixel-ratio: 1.5) and (orientation: landscape) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 29px;
+        line-height: 45px;
+        padding: 10px 20px;
+        word-spacing: 7px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 600px;
+        height: 300px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 600px;
+        width: 300px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 120px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 1640px;
+   } */
+}
+/*********************************************************************************************************************************************/
+/* responsive for min width 1200px/max width 1600px (kindle fire hd 8.9)Pixel 1.5*/
+/* @media only screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    #articleContainer {
+        grid-template-columns: repeat(14, 1fr);
+        grid-template-rows: 500px;
+    }
+    #articleContainercontent {
+        grid-column: 1/15;
+    }
+} */
+/************************************/
+/* @media only screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (min-device-height: 1200px) and (max-device-height: 1600px) and (orientation: landscape) {
+    #articleContainer {
+        grid-template-columns: repeat(14, 1fr);
+        grid-template-rows: 600px;
+    }
+    #articleContainercontent {
+        grid-column: 3/13;
+    }
+} */
+/**********************************/
+@media only screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1.5) and (-moz-min-device-pixel-ratio: 1.5) and (-o-min-device-pixel-ratio: 1.5) and (min-device-pixel-ratio: 1.5) and (orientation: portrait) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 30px;
+        line-height: 45px;
+        padding: 10px 20px;
+        word-spacing: 7px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 600px;
+        height: 300px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 600px;
+        width: 400px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 90px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 1320px;
+   } */
+}
+/************************************/
+@media only screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (min-device-height: 1200px) and (max-device-height: 1600px)  and (-webkit-min-device-pixel-ratio: 1.5) and (-moz-min-device-pixel-ratio: 1.5) and (-o-min-device-pixel-ratio: 1.5) and (min-device-pixel-ratio: 1.5) and (orientation: landscape) {
+    #pictureFlex > .picture > figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 30px;
+        line-height: 45px;
+        padding: 10px 20px;
+        word-spacing: 7px;
+    }
+    #pictureFlex > .picture > .horizontal {
+        width: 600px;
+        height: 300px;
+    }
+    #pictureFlex > .picture > .vertical {
+        height: 600px;
+        width: 400px;
+    }
+    #pictureFlex {
+          /* flex-direction: column; */
+        row-gap: 90px;
+    }
+   /* .pictureGrid {
+        grid-template-rows: 1320px;
+   } */
+}
+/****************************************************************/
