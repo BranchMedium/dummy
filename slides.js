@@ -49,8 +49,8 @@ function slideIt() {
 
 //this function set the background picture to slide one another
 function action() {
-    dont = setInterval(slideIt, 10000);
-    return dont
+    return setInterval(slideIt, 10000);
+    
 }
 // this stops the setinterval by calling the clearInterval
 function stop() {
